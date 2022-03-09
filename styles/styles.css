@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b3644), to(#656f6f));
+  background: linear-gradient(to bottom, #2b3644 0%, #656f6f 100%);
+}
+
+.container {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  max-width: 225px;
+}
+
+.button {
+  float: left;
+  position: relative;
+  bottom: -65px;
+  left: 50%;
+  color: #e55643;
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.button span {
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  display: inline-block;
+  float: left;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
+}
+
+.button:hover {
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 76px;
+  margin: 0;
+  line-height: 79px;
+  letter-spacing: 4px;
+}
+
+.title {
+  -webkit-transform: translateX(-50%) rotate(-10deg);
+          transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+}
+
+.title span {
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
+  min-width: 10px;
+  min-height: 10px;
+  position: relative;
+}
+
+.title:nth-child(1) {
+  color: #e55643;
+}
+
+.title:nth-child(2) {
+  color: #2b9f5e;
+}
+
+.title:nth-child(3) {
+  color: #f1c83c;
+}
+
+.anim {
+  -webkit-animation-name: textmove;
+          animation-name: textmove;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /*animation-delay: 2s;*/
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  /*animation-fill-mode: both;*/
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes textmove {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  to {
+    -webkit-transform: translate(100px);
+            transform: translate(100px);
+  }
+}
+
+@keyframes textmove {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  to {
+    -webkit-transform: translate(100px);
+            transform: translate(100px);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
