@@ -118,3 +118,12 @@ h1{
   from {transform: translate(0);}
   to {transform: translate(100px);}
 } 
+
+
+.active{
+  z-index: 2;
+}
+
+.pre-active{
+  z-index: 1;
+}

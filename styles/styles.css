@@ -137,4 +137,12 @@ h1 {
             transform: translate(100px);
   }
 }
+
+.active {
+  z-index: 2;
+}
+
+.pre-active {
+  z-index: 1;
+}
 /*# sourceMappingURL=styles.css.map */
